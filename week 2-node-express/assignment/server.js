@@ -14,7 +14,7 @@ app.use(express.json());
 
 // Request logging 
 const requestLogger = (req, res, next) => {
-    console.log(`Time : ${new Date()} \nRequest : ${req.method} \nResponse : ${req.url}`);
+    console.log(`Time : ${new Date()} \nRequest : ${req.method} \nResponse : ${req.url} \n`);
     next();
 }; 
 app.use(requestLogger); 
